@@ -28,7 +28,7 @@ body {
     margin-right: -15px;
     clear: both;
 }
-*, ::before, ::after {
+* {
     box-sizing: border-box;
 }
 .breadcrumb{
@@ -49,4 +49,44 @@ body {
     text-decoration: underline;
     text-decoration-color: red;
 }
+.panel-body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/*.panel-body img{
+    width: 250px;
+    height: 300px;
+}*/
+.productCard:hover{
+    border: black 1px solid;
+    box-sizing: border-box;
+}
+.productCard{
+    border: white 1px solid;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.panel-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    border-top: none;
+}
+.panel-footer button{
 
+}
+.panel-footer p{
+    color: red;
+    font-size: 14px;
+}
+.footer{
+    border-top: 1px black solid;
+}
+.footer .col-sm-4{
+    text-align: center;
+}
+.footer h4{
+    margin: 0;
+}
