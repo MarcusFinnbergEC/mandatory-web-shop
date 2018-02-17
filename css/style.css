@@ -37,9 +37,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.navbar-nav > .dropdown-menu li{
-    color: black;
-}
 .navbar-nav > li a{
     font-size: 20px;
     color: white;
@@ -48,6 +45,9 @@ body {
     background-color: #000;
     text-decoration: underline;
     text-decoration-color: red;
+}
+.carousel-cont{
+    margin-bottom: 50px;
 }
 .panel-body{
     display: flex;
@@ -83,6 +83,8 @@ body {
 }
 .footer{
     border-top: 1px black solid;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .footer .col-sm-4{
     text-align: center;
