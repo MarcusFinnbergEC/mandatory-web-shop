@@ -49,15 +49,90 @@
     <nav class="breadcrumb"></nav>
 </header>
 <div class="container">
-    <div class="row" id="productRow">
-
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>In your cart:</h3>
+            <p>You haven't added any item(s) to your cart!</p>
+        </div>
+        <div class="col-sm-6">
+            <h3>Register buyer</h3>
+            <form class="form-horizontal" action="confirmationreg.html">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="fname">First name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="fname" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="lname">Last name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="lname" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Ex. random@testit.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="phone">Phone:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="phone" placeholder="Only digits!">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="adress">Street address:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="adress" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="zip">Zip code:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="zip" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="city">City:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="city" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="country">Country:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="country" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="comment">Comment:</label>
+                    <div class="col-sm-offset-2 col-sm-10">
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label><input type="checkbox"> I want to receive monthly newsletter and offers from Contender Sports AB</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-danger" disabled>Submit</button>
+                        <em>You must have an item in your cart!</em>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 <div class="container-fluid">
     <div class="row footer">
         <div class="col-sm-4">
             <h4>Contact us</h4>
-            <p><span class="fa fa-phone"></span> 042-22 22 00</p>
+            <p><span class="fa fa-phone"></span> +46 (0)42-13 13 00</p>
             <p><span class="fa fa-envelope-open"></span> contact@contendersports.se</p>
         </div>
         <div class="col-sm-4">

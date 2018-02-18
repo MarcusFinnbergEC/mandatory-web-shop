@@ -87,34 +87,34 @@ setTimeout(x, 5000);*/
         existingElement.appendChild(div);*/
 
 //--
-/*function Product(fabric, fabric, price, desc, pic) {
-    this.fabric = fabric;
-    this.fabric = fabric;
-    this.price = price;
-    this.desc = desc;
+/*function Product(sName, sName, title, phone, pic) {
+    this.sName = sName;
+    this.sName = sName;
+    this.title = title;
+    this.phone = phone;
     this.pic = pic;
 }*/
 
-/*products.push({fabric:"Bauer", fabric:"Vapor 1X Lite Griptac", price:235, desc:"Light and extremely powerful hockeystick, give yourself the best chance to score a ton of goals", pic:"../images/Products/bauerStick.jpg"});
+/*staff.push({sName:"Bauer", sName:"Vapor 1X Lite Griptac", title:235, phone:"Light and extremely powerful hockeystick, give yourself the best chance to score a ton of goals", pic:"../images/Products/bauerStick.jpg"});
 
-products.push({fabric:"Bauer", fabric:"Supreme 1s", price:169, desc:"Tight and light fit, feel every dangle you make with this thin leather glove", pic:"../images/Products/bauerGloves.jpg"});
+staff.push({sName:"Bauer", sName:"Supreme 1s", title:169, phone:"Tight and light fit, feel every dangle you make with this thin leather glove", pic:"../images/Products/bauerGloves.jpg"});
 
-products.push({fabric:"Bauer", fabric:"Re-Akt 200", price:239, desc:"Sick of concussions? This helmet gives you the extra protection you need", pic:"../images/Products/bauerHelmet.jpg"});
+staff.push({sName:"Bauer", sName:"Re-Akt 200", title:239, phone:"Sick of concussions? This helmet gives you the extra protection you need", pic:"../images/Products/bauerHelmet.jpg"});
 
-products.push({fabric:"CCM", fabric:"RibCor Trigger2 PMT Grip", price:229, desc:"Low-kick for a quick release and hard wrist shots, perfect for the sniper", pic:"../images/Products/ccmStick.jpg"});
+staff.push({sName:"CCM", sName:"RibCor Trigger2 PMT Grip", title:229, phone:"Low-kick for a quick release and hard wrist shots, perfect for the sniper", pic:"../images/Products/ccmStick.jpg"});
 
-products.push({fabric:"CCM", fabric:"Super Tacks", price:159, desc:"Comfortable glove with a perfect fit", pic:"../images/Products/ccmGloves.jpg"});
+staff.push({sName:"CCM", sName:"Super Tacks", title:159, phone:"Comfortable glove with a perfect fit", pic:"../images/Products/ccmGloves.jpg"});
 
-products.push({fabric:"CCM", fabric:"Fitlite 3DS", price:178, desc:"Quality helmet, adjustable fit and removeable paddings for your comfort", pic:"../images/Products/ccmStick.jpg"});
+staff.push({sName:"CCM", sName:"Fitlite 3DS", title:178, phone:"Quality helmet, adjustable fit and removeable paddings for your comfort", pic:"../images/Products/ccmStick.jpg"});
 
-products.push({fabric:"Warrior", fabric:"Covert QRL SE Grip", price:229, desc:"High-kick for the hardest slapshot you've ever seen.", pic:"../images/Products/warriorStick.jpg"});
+staff.push({sName:"Warrior", sName:"Covert QRL SE Grip", title:229, phone:"High-kick for the hardest slapshot you've ever seen.", pic:"../images/Products/warriorStick.jpg"});
 
-products.push({fabric:"Warrior", fabric:"Alpha QX", price:155, desc:"Kick ass gloves, easy to drop, perfect for a fighter", pic:"../images/Products/warriorGloves.jpg"});
+staff.push({sName:"Warrior", sName:"Alpha QX", title:155, phone:"Kick ass gloves, easy to drop, perfect for a fighter", pic:"../images/Products/warriorGloves.jpg"});
 
-products.push({fabric:"Warrior", fabric:"Covert PX+", price:159, desc:"Dont worry about getting a hit to the head, this helmet will protect you, well most of the times", pic:"../images/Products/warriorHelmet.png"});*/
+staff.push({sName:"Warrior", sName:"Covert PX+", title:159, phone:"Dont worry about getting a hit to the head, this helmet will protect you, well most of the times", pic:"../images/Products/warriorHelmet.png"});*/
 
 
-//console.log(products);
+//console.log(staff);
 
 /*let panelBody = document.querySelectorAll('.panel-body');
 let panelFooter = document.querySelectorAll('.panel-footer');
