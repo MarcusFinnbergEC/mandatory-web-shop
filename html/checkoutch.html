@@ -62,68 +62,68 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td><img class="img-responsive" src="../images/Products/bauerGloves.jpg" alt="bauer gloves"></td>
-                    <td>Bauer Supreme 1s</td>
-                    <td>$ 169</td>
+                    <td><img class="img-responsive" src="../images/Products/ccmHelmet.jpg" alt="ccm helmet"></td>
+                    <td>CCM Fitlite 3DS</td>
+                    <td>$ 178</td>
                 </tr>
                 </tbody>
             </table>
         </div>
         <div class="col-sm-6">
             <h3>Register buyer</h3>
-            <form class="form-horizontal" action="confirmationreg.html">
+            <form name="regBuyer" class="form-horizontal" action="confirmationbuy.html" onsubmit="validateForm()">
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="fname">First name:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="fname" placeholder="">
+                        <input type="text" class="form-control" name="fname" id="fname" placeholder="">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="lname">Last name:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="lname" placeholder="">
+                        <input type="text" class="form-control" name="lname" id="lname" placeholder="">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="email">Email:</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" placeholder="Ex. random@testit.com">
+                        <input type="text" class="form-control" name="email" id="email" placeholder="Ex. random@testit.com">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="phone">Phone:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="phone" placeholder="Only digits!">
+                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Only digits!">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-2" for="adress">Street address:</label>
+                    <label class="control-label col-sm-2" for="address">Street address:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="adress" placeholder="">
+                        <input type="text" class="form-control" name="address" id="address" placeholder="">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="zip">Zip code:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="zip" placeholder="">
+                        <input type="text" class="form-control" name="zip" id="zip" placeholder="">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="city">City:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="city" placeholder="">
+                        <input type="text" class="form-control" name="city" id="city" placeholder="">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="country">Country:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="country" placeholder="">
+                        <input type="text" class="form-control" name="country" id="country" placeholder="">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="comment">Comment:</label>
                     <div class="col-sm-offset-2 col-sm-10">
-                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                        <textarea class="form-control" rows="5" name="comment" id="comment"></textarea>
                     </div>
                 </div>
                 <div class="form-group">
@@ -135,7 +135,8 @@
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-danger">Submit</button>
+                        <button type="submit" class="btn btn-danger" id="submitButton">Submit</button>
+                        <em>You must have an item in your cart!</em>
                     </div>
                 </div>
             </form>
