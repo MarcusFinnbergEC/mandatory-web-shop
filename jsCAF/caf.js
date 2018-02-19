@@ -11,10 +11,6 @@ if (cartRow.children.length === 0){
     submit.setAttribute("disabled", "");
 }
 
-function Redirect() {
-    window.location.href="confirmationbuy.html";
-}
-
 let form = document.getElementsByClassName("form-horizontal");
 
 function validateForm() {
@@ -27,53 +23,52 @@ function validateForm() {
     let city = document.forms["regBuyer"]["city"].value;
     let country = document.forms["regBuyer"]["country"].value;
     let comment = document.forms["regBuyer"]["comment"].value;
-    let numbers = /^[0-9]+$/;
+    let numbers = /[0-9]/;//Funkar inte!
     let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (fname === "") {
         alert("First name must be filled out");
-        return false;
+        return event.preventDefault();
     }
     else {
         if (lname === "") {
             alert("Last name must be filled out");
-            return false;
+            return event.preventDefault();
         }
         else {
             if (email === "") {
-                alert("Email must be filled out")
+                alert("Email must be filled out");
+                return event.preventDefault();
             }
             else {
                 if (email.match(mailformat)) {
-                    if (phone.length > 0) {
+                    if (phone.length < 0) {
                         if (phone.match(numbers)) {
                             if (address === "") {
                                 alert("Street address must be filled out");
-                                return false;
+                                return event.preventDefault();
                             }
                             else {
                                 if (zip === "") {
                                     alert("Zip code must be filled out");
-                                    return false;
+                                    return event.preventDefault();
                                 }
                                 else {
                                     if (city === "") {
                                         alert("City must be filled out");
-                                        return false;
+                                        return event.preventDefault();
                                     }
                                     else {
                                         if (country === "") {
                                             alert("Country must be filled out");
-                                            return false;
+                                            return event.preventDefault();
                                         }
                                         else {
-                                            if (comment.childNodes > 2) {
+                                            if (comment.length > 250) {
                                                 alert("Your message is over 250 characters long, please shorten it");
-                                                return false;
+                                                return event.preventDefault();
                                             }
                                             else {
-                                                //location.href = "confirmationbuy.html";
-                                                //Redirect();
-                                                confirm("Thank you for your purchase")
+
                                             }
                                         }
                                     }
@@ -84,31 +79,30 @@ function validateForm() {
                     else {
                         if (address === "") {
                             alert("Street address must be filled out");
-                            return false;
+                            return event.preventDefault();
                         }
                         else {
                             if (zip === "") {
                                 alert("Zip code must be filled out");
-                                return false;
+                                return event.preventDefault();
                             }
                             else {
                                 if (city === "") {
                                     alert("City must be filled out");
-                                    return false;
+                                    return event.preventDefault();
                                 }
                                 else {
                                     if (country === "") {
                                         alert("Country must be filled out");
-                                        return false;
+                                        return event.preventDefault();
                                     }
                                     else {
-                                        if (comment.childNodes > 250) {
+                                        if (comment.length > 250) {
                                             alert("Your message is over 250 characters long, please shorten it");
-                                            return false;
+                                            return event.preventDefault();
                                         }
                                         else {
-                                            //location.href = "confirmationbuy.html";
-                                            Redirect();
+
                                         }
                                     }
                                 }
@@ -118,9 +112,10 @@ function validateForm() {
                 }
                 else {
                     alert("E-mail not valid");
-                    return false;
+                    return event.preventDefault();
                 }
             }
         }
     }
 }
+submit.addEventListener("click", validateForm);
