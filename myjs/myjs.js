@@ -22,14 +22,14 @@ let products = [{fabric:"Bauer Vapor 1X Lite Griptac", price:"235", desc:"Light 
             let button = document.createElement("BUTTON");
             let buttontext = (document.createTextNode("Buy now"));
             let clear = document.createElement("DIV");
-            let a = document.createElement("A");
+            //let a = document.createElement("A");
 
             h4.appendChild(document.createTextNode(products[i].fabric));
             button.appendChild(buttontext);
             em.appendChild(document.createTextNode(products[i].desc));
             p.appendChild(document.createTextNode("$ " + products[i].price));
 
-            a.appendChild(button);
+            //a.appendChild(button);
             panelBody.appendChild(img);
             panelBody.appendChild(h4);
             panelBody.appendChild(em);
