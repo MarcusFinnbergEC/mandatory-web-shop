@@ -4,10 +4,17 @@ let submit = document.getElementById("submitButton");
 if (cartRow.children.length === 0){
     let h3 = document.createElement("H3");
     let p = document.createElement("P");
+    let a = document.createElement("A");
+    let buttonshop = document.createElement("BUTTON");
     h3.appendChild(document.createTextNode("In your cart:"));
     p.appendChild(document.createTextNode("You haven't added any item(s) to your cart!"));
+    buttonshop.appendChild(document.createTextNode("Continue shopping"));
+    a.setAttribute("href", "products.html");
+    a.appendChild(buttonshop);
+    buttonshop.setAttribute("class", "btn btn-danger");
     cartRow.appendChild(h3);
     cartRow.appendChild(p);
+    cartRow.appendChild(a);
     submit.setAttribute("disabled", "");
 }
 

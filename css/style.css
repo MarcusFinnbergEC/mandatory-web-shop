@@ -103,4 +103,12 @@ td > img{
 #thankYou{
     margin-bottom: 25px;
 }
+.cart-text{
+    color: red;
+}
+#cart-counter{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
 
